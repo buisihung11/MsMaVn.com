@@ -23,7 +23,7 @@ function App() {
             color: '#223368',
           }}
         >
-          IMPORT VIDEO TRUYỀN CẢM HỨNG
+          IMPORT VIDEO TRUYỀN CẢM HỨNG HAHA
         </h1>
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
