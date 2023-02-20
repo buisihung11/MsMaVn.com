@@ -1,8 +1,35 @@
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto; /* or block, swap, fallback, optional */
+  src: url('/fonts/SVN-Gotham Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  font-style: normal;
+  font-weight: bold;
+  font-display: auto; /* or block, swap, fallback, optional */
+  src: url('/fonts/SVN-Gotham Bold.otf') format('otf');
+}
+
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  font-style: italic;
+  font-weight: normal;
+  font-display: auto; /* or block, swap, fallback, optional */
+  src: url('/fonts/SVN-Gotham Italic.otf') format('otf');
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'SVN-Gotham';
 }
 
 .logo {
@@ -40,3 +67,4 @@
 .read-the-docs {
   color: #888;
 }
+
