@@ -13,7 +13,7 @@ const CardRule = ({ imageUrl, title, description }) => {
     >
       <Flex gap="20px">
         <Center flex={1}>
-          <Box textAlign="center" px={{base: 4, md: 12}}>
+          <Box textAlign="center" px={{base: 12, sm: 12, md: 12}}>
             <Text
               textAlign="center"
               style={{

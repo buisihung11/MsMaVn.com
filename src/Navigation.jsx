@@ -3,23 +3,23 @@ import { Box, Text, Image, Flex } from '@chakra-ui/react'
 const navs = [
   {
     name: 'TRANG CHỦ',
-    link: '/',
+    link: '#',
   },
   {
     name: 'THÔNG TIN CUỘC THI',
-    link: '/',
+    link: '#introduction',
   },
   {
     name: 'TIN TỨC',
-    link: '/',
+    link: '#news',
   },
   {
     name: 'ĐĂNG KÝ',
-    link: '/',
+    link: '#register',
   },
   {
     name: 'ĐỐI TÁC',
-    link: '/',
+    link: '#partner',
   },
 ]
 
