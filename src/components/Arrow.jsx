@@ -10,6 +10,7 @@ const LeftArrow = ({ onClick }) => (
     onClick={onClick}
     sx={{
       borderRadius: '82px',
+      cursor: 'pointer',
       background: '#FFFFFF',
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',
       position: 'absolute',
@@ -34,6 +35,7 @@ const RightArrow = ({ onClick }) => (
     transformOrigin="center"
     sx={{
       borderRadius: '82px',
+      cursor: 'pointer',
       background: '#FFFFFF',
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',
       position: 'absolute',

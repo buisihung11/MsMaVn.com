@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Navigation from './Navigation'
 import { LeftArrow, RightArrow } from './components/Arrow'
+import CardItem from './components/CartItem'
+import CardRule from './components/CartRule'
 
 const introductions = [
   {
@@ -23,44 +25,20 @@ const introductions = [
   },
 ]
 
-const CardItem = ({ imageUrl, title, description }) => {
-  return (
-    <Box
-      borderRadius="20px"
-      border="0.5px"
-      borderColor="#223368"
-      boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-      // w="50%"
-      // minW="500px"
-      p="50px"
-    >
-      <Flex gap="20px">
-        <Box w="40%">
-          <Image w="100" h="auto" src={`./images/${imageUrl}`} alt={title} />
-        </Box>
-        <Box flex={1}>
-          <Text
-            textAlign="center"
-            style={{
-              fontSize: '30px',
-              color: '#223368',
-            }}
-          >
-            {title}
-          </Text>
-          <Text
-            style={{
-              fontSize: '20px',
-              lineHeight: '36px',
-            }}
-          >
-            {description}
-          </Text>
-        </Box>
-      </Flex>
-    </Box>
-  )
-}
+const rules = [
+  {
+    imageUrl: 'rule_1.png',
+    title: 'THỂ LỆ CUỘC THI',
+    description:
+      'Ở mỗi chặng, các thí sinh buộc phải phát huy Tính cách, Ý tưởng và Giá trị. Trong trường hợp chưa quyết định được người thắng cuộc trong vòng Bán kết hoặc Chung kết, thí sinh nào có số phiếu bình chọn cao nhất trong thời gian ngắn nhất sẽ là người chiến thắng.',
+  },
+  {
+    imageUrl: 'rule_1.png',
+    title: 'THỂ LỆ CUỘC THI',
+    description:
+      'Ở mỗi chặng, các thí sinh buộc phải phát huy Tính cách, Ý tưởng và Giá trị. Trong trường hợp chưa quyết định được người thắng cuộc trong vòng Bán kết hoặc Chung kết, thí sinh nào có số phiếu bình chọn cao nhất trong thời gian ngắn nhất sẽ là người chiến thắng.',
+  },
+]
 
 function App() {
   const [count, setCount] = useState(0)
@@ -115,6 +93,27 @@ function App() {
       {/* TIMELINE */}
       <Center p={{ base: 2, md: 20 }}>
         <Image src="./images/timeline.png" alt="Timeline" sx={{ borderRadius: '20px' }} />
+      </Center>
+      {/* RULES */}
+      <Center
+        height="800px"
+        sx={{
+          '& .slick-slide': {
+            p: '2rem',
+          },
+          '& .slick-slider': {
+            width: '100%',
+          },
+        }}
+        maxW="100%"
+        overflow="hidden"
+        px={{ base: 0, sm: 32, xl: 60 }}
+      >
+        <Slider {...settings}>
+          {rules.map((rule) => (
+            <CardRule key={rule.title} {...rule} />
+          ))}
+        </Slider>
       </Center>
     </Container>
   )
