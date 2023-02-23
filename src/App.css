@@ -27,6 +27,7 @@
 
 #root {
   font-family: 'SVN-Gotham';
+  overflow-y: hidden;
 }
 
 .logo {

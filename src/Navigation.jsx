@@ -37,7 +37,7 @@ const navs = [
 ]
 
 const DesktopNav = () => (
-  <HStack spacing={{base: 6, xl: 24}}>
+  <HStack spacing={{base: 6, sm: 6, xl: 24}}>
     {navs.map((nav) => (
       <Box key={nav.name} as="a" href={nav.link} display="flex">
         <Text
@@ -82,12 +82,12 @@ const MobileNav = () => (
 const Navigation = () => {
   const { isOpen, onToggle } = useDisclosure()
   return (
-    <Box bg="#EDEDED" maxW="100%" px={{ base: '4', sm: '12', xl: '40' }} py={[2, 8]}>
+    <Box bg="#EDEDED" maxW="100%" px={{ base: '4', sm: '12', xl: 30 }} py={[2, 8]}>
       <Flex
         flexDir={{ base: 'row-reverse', md: 'row' }}
         alignItems="center"
         justifyContent={{ base: 'space-between', md: 'flex-start' }}
-        gap={14}
+        gap={12}
       >
         <Image
           w={{ base: '54px', xl: '120px' }}

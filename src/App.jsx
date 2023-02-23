@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import MentorList from './components/MentorList'
 import NewsList from './components/NewsList'
 import RegisterForm from './components/RegisterForm'
+import VideoContainer from './components/VideoContainer'
 import Navigation from './Navigation'
 
 const introductions = [
@@ -83,7 +84,7 @@ function App() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          arrows: true
+          arrows: true,
         },
       },
       {
@@ -91,7 +92,7 @@ function App() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
         },
       },
     ],
@@ -129,16 +130,8 @@ function App() {
         </Slider>
       </Center>
       {/* VIDEO */}
-      <Center textAlign="center" bg="#EDEDED" p={[4, 8]} height={{ base: '300px', xl: '700px' }}>
-        <Text
-          sx={{
-            fontWeight: 700,
-            fontSize: { base: '30px', xl: '80px' },
-            color: '#223368',
-          }}
-        >
-          VIDEO TRUYỀN CẢM HỨNG
-        </Text>
+      <Center textAlign="center" bg="#EDEDED" p={[4, 8]} height={{ base: 'auto', xl: '700px' }}>
+        <VideoContainer />
       </Center>
       {/* TIMELINE */}
       <Center p={{ base: 4, md: 20 }}>
@@ -263,7 +256,7 @@ function App() {
             TIN TỨC
           </Heading>
         </Box>
-        <Box w={['95%', '80%']}>
+        <Box w={{ base: '95%', xl: '80%' }}>
           <NewsList />
         </Box>
       </Center>
