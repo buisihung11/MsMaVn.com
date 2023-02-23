@@ -7,28 +7,27 @@ const CardItem = ({ imageUrl, title, description }) => {
       border="0.5px"
       borderColor="#223368"
       boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-      // w="50%"
-      // minW="500px"
-      p="50px"
+      p={{ base: 2, sm: 6, xl: 14 }}
     >
-      <Flex gap="20px">
-        <Box w="40%">
+      <Flex gap="20px" flexDir={{ base: 'column', md: 'row' }}>
+        <Box w={{ base: '100%', md: '40%' }}>
           <Image w="100" h="auto" src={`./images/${imageUrl}`} alt={title} />
         </Box>
         <Box flex={1}>
           <Text
             textAlign="center"
-            style={{
-              fontSize: '30px',
+            sx={{
+              fontSize:{base: 20, xl: 30},
               color: '#223368',
             }}
           >
             {title}
           </Text>
           <Text
-            style={{
-              fontSize: '20px',
-              lineHeight: '36px',
+            textAlign={{ base: 'center', md: 'left' }}
+            sx={{
+              fontSize: [14, 14, 14, 20],
+              lineHeight: { base: 'auto', xl: '36px' },
             }}
           >
             {description}

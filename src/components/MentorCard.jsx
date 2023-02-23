@@ -4,7 +4,7 @@ const MentorCard = ({ imageUrl, description, name }) => (
   <Box
     sx={{
       backgroundRepeat: 'no-repeat',
-      backgroundOrigin: 'center',
+      backgroundPosition: 'center',
       backgroundSize: 'cover',
     }}
     h="660px"

@@ -84,7 +84,7 @@ function App() {
       {/* INTRODUCTION */}
       <Center
         id="introduction"
-        height="800px"
+        height={{ base: 'auto', xl: '800px' }}
         sx={{
           '& .slick-slide': {
             p: '2rem',
@@ -96,6 +96,7 @@ function App() {
         maxW="100%"
         overflow="hidden"
         px={{ base: 0, sm: 32, xl: 60 }}
+        py={[4, 8, 12, 20]}
       >
         <Slider {...settings}>
           {introductions.map((introd) => (
