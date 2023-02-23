@@ -26,19 +26,19 @@ const navs = [
 const socials = [
   {
     url: 'telegram.png',
-    href: '/',
+    href: 'https://t.me/+VMCV1Yasd2RkMGNl',
   },
   {
     url: 'facebook.png',
-    href: '/',
+    href: 'https://www.facebook.com/MsMA.VN',
   },
   {
     url: 'zalo.png',
-    href: '/',
+    href: 'https://zalo.me/g/xpdmxf143',
   },
   {
     url: 'tiktok.png',
-    href: '/',
+    href: 'https://www.tiktok.com/@msmavn',
   },
 ]
 
@@ -62,7 +62,7 @@ const Footer = () => (
         </Heading>
         <HStack spacing={8}>
           {socials.map((soc) => (
-            <Link key={soc.url} href={soc.href}>
+            <Link target="_blank" key={soc.url} href={soc.href}>
               <Image
                 w={{ base: '32px', md: '78px' }}
                 h={{ base: '32px', md: '78px' }}
