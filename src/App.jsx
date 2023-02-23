@@ -67,8 +67,6 @@ const rules = [
 ]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   const settings = {
     infinite: true,
     speed: 500,
@@ -80,7 +78,7 @@ function App() {
 
   return (
     <Container minH="2000px" overflow="hidden" maxWidth="100vw" p={0}>
-      <Image src="./images/hero_image.png" alt="Dan Abramov" />
+      <Image h={{ base: '140px', md: 'auto' }} src="./images/hero_image.png" alt="Dan Abramov" />
       {/* NAV */}
       <Navigation />
       {/* INTRODUCTION */}
@@ -144,7 +142,7 @@ function App() {
       </Center>
       {/* REGISTER FORM */}
       <Center
-      id="register"
+        id="register"
         sx={{
           backgroundRepeat: 'no-repeat',
           backgroundOrigin: 'center',
