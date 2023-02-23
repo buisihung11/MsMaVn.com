@@ -105,11 +105,11 @@ function App() {
         </Slider>
       </Center>
       {/* VIDEO */}
-      <Center bg="#EDEDED" height="700px">
+      <Center textAlign="center" bg="#EDEDED" p={[4, 8]} height={{ base: '300px', xl: '700px' }}>
         <Text
           sx={{
             fontWeight: 700,
-            fontSize: '80px',
+            fontSize: { base: '30px', xl: '80px' },
             color: '#223368',
           }}
         >
@@ -117,12 +117,12 @@ function App() {
         </Text>
       </Center>
       {/* TIMELINE */}
-      <Center p={{ base: 2, md: 20 }}>
+      <Center p={{ base: 4, md: 20 }}>
         <Image src="./images/timeline.png" alt="Timeline" sx={{ borderRadius: '20px' }} />
       </Center>
       {/* RULES */}
       <Center
-        height="800px"
+        height={{ base: 'auto', xl: '800px' }}
         sx={{
           '& .slick-slide': {
             p: '2rem',
@@ -131,9 +131,11 @@ function App() {
             width: '100%',
           },
         }}
-        maxW="100%"
+        maxW={['100%']}
         overflow="hidden"
-        px={{ base: 0, sm: 32, xl: 60 }}
+        px={{ base: 4, sm: 32, xl: 60 }}
+        w={[ '100%']}
+        mx="auto"
       >
         <Slider {...settings}>
           {rules.map((rule) => (
