@@ -7,7 +7,7 @@ const MentorCard = ({ imageUrl, description, name }) => (
       backgroundPosition: 'center',
       backgroundSize: 'cover',
     }}
-    h="660px"
+    h={["400px","660px"]}
     position="relative"
     bg={`url(./images/mentors/${imageUrl})`}
     borderRadius="20px"

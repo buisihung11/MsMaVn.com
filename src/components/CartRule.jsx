@@ -20,8 +20,8 @@ const CardRule = ({ imageUrl, title, description }) => {
           >
             <Text
               textAlign="center"
-              style={{
-                fontSize: '30px',
+              sx={{
+                fontSize: { base: 20, xl: 30 },
                 color: '#223368',
               }}
             >
@@ -41,7 +41,7 @@ const CardRule = ({ imageUrl, title, description }) => {
           <Image
             objectFit="cover"
             w="100%"
-            h={['200px', '100%']}
+            h={['140px', '100%']}
             src={`./images/${imageUrl}`}
             alt={title}
           />

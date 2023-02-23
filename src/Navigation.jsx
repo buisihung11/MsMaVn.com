@@ -10,7 +10,7 @@ import {
   Text,
   useDisclosure,
   VStack,
-  useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react'
 
 const navs = [
@@ -37,12 +37,12 @@ const navs = [
 ]
 
 const DesktopNav = () => (
-  <HStack spacing={6}>
+  <HStack spacing={{base: 6, xl: 24}}>
     {navs.map((nav) => (
       <Box key={nav.name} as="a" href={nav.link} display="flex">
         <Text
-          fontSize={{ base: '14px', xl: '20px' }}
-          fontWeight="bold"
+          fontSize={{ base: '14px', xl: '25px' }}
+          fontWeight={900}
           color="#223368"
           textTransform="uppercase"
         >
@@ -86,7 +86,8 @@ const Navigation = () => {
       <Flex
         flexDir={{ base: 'row-reverse', md: 'row' }}
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent={{ base: 'space-between', md: 'flex-start' }}
+        gap={14}
       >
         <Image
           w={{ base: '54px', xl: '120px' }}

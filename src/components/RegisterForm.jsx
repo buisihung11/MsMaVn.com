@@ -10,7 +10,7 @@ const StyledLabel = styled(FormLabel)`
 const StyledInput = styled(Input)`
   width: 100%;
   background: white !important;
-  height: 75px !important;
+  /* height: 75px !important; */
   font-size: 36px !important;
   border-radius: 20px;
 `
@@ -25,18 +25,18 @@ const RegisterForm = () => {
       <VStack spacing="20px" textAlign="left" alignItems="start">
         <FormContainer>
           <StyledLabel>HỌ VÀ TÊN</StyledLabel>
-          <StyledInput w="100%" />
+          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" />
         </FormContainer>
         <FormContainer>
           <StyledLabel>SỐ ĐIỆN THOẠI</StyledLabel>
-          <StyledInput w="100%" />
+          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" />
         </FormContainer>
         <FormContainer>
           <StyledLabel>KHU VỰC SINH SỐNG:</StyledLabel>
           <Select
             sx={{
-              height: '70px',
-              fontSize: '36px',
+              height: { base: '40px', xl: '72px' },
+              fontSize: { base: 'auto', xl: '36px' },
             }}
             bg="white"
             placeholder="Chọn khu vực"
@@ -48,7 +48,7 @@ const RegisterForm = () => {
         </FormContainer>
         <FormContainer>
           <StyledLabel>EMAIL</StyledLabel>
-          <StyledInput w="100%" type="email" />
+          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" type="email" />
         </FormContainer>
       </VStack>
       <Button
@@ -57,12 +57,13 @@ const RegisterForm = () => {
           border: '4px solid #FFFFFF',
           borderRadius: '20px',
           fontWeight: 700,
-          fontSize: '36px',
+          fontSize: ['20px','36px'],
           color: '#FFFFFF',
-          height: '90px',
-          width: '330px',
+          height: ['45px','90px'],
+          width: ['230px','330px'],
           filter: 'drop-shadow(0px 0px 20px rgba(180, 232, 255, 0.5))',
-          ml: 'auto',
+          mx: 'auto',
+          textAlign: 'center'
         }}
         mt={12}
       >

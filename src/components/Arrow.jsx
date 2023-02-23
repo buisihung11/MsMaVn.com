@@ -15,7 +15,7 @@ const LeftArrow = ({ onClick }) => (
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',
       position: 'absolute',
       top: '50%',
-      left: '-70px',
+      left: { base: '-60px', md: '-100px', xl: '-140px' },
       transform: {
         base: 'translate(0, -50%) scale(0.5)',
         xl: 'translate(0, -50%) ',
@@ -31,7 +31,6 @@ const RightArrow = ({ onClick }) => (
     onClick={onClick}
     w={{ base: '82px' }}
     h={{ base: '82px' }}
-    
     transformOrigin="center"
     sx={{
       borderRadius: '82px',
@@ -40,7 +39,7 @@ const RightArrow = ({ onClick }) => (
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',
       position: 'absolute',
       top: '50%',
-      right: '-70px',
+      right: { base: '-60px', md: '-100px', xl: '-140px' },
       transform: {
         base: 'translate(0, -50%) scale(0.5)',
         xl: 'translate(0, -50%) ',

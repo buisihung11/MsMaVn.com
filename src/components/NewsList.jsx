@@ -5,31 +5,58 @@ import NewsCard from './NewsCard'
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 }
 const news = [
   {
     thumbnailUrl: 'news_1.png',
-    date: '29/07/2023',
-    title: 'Amet minim mollit non deserunt ullam est sit aliqua',
+    date: '09/02/2023',
+    title: 'Nhan sắc Lý Nhã Kỳ thăng hạng, xuất hiện tươi tắn sau tin đồn chán showbiz',
+    url: 'https://www.saigonchoice.com/nhan-sac-ly-nha-ky-thang-hang-xuat-hien-tuoi-tan-sau-tin-don-chan-showbiz/',
     description:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim veli',
+      'Chiều 9/2, diễn viên Lý Nhã Kỳ cùng hàng loạt sao Việt khoe sắc trên thảm đỏ sự kiện ra mắt cuộc thi Trao Quyền Dành Cho Phụ Nữ – MsMA 2023 tại TP.HCM. Người đẹp, doanh nhân Lý Nhã Kỳ thể hiện sự sang trọng và quyền lực khi bước xuống từ xe sang xe Rolls Royce 40 tỷ.',
   },
   {
-    thumbnailUrl: 'news_2.png',
-    date: '29/07/2023',
-    title: 'Amet minim mollit non deserunt ullam est sit aliqua',
+    thumbnailUrl: 'news_1.png',
+    date: '09/02/2023',
+    title: 'Nhan sắc Lý Nhã Kỳ thăng hạng, xuất hiện tươi tắn sau tin đồn chán showbiz',
+    url: 'https://www.saigonchoice.com/nhan-sac-ly-nha-ky-thang-hang-xuat-hien-tuoi-tan-sau-tin-don-chan-showbiz/',
     description:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim veli',
+      'Chiều 9/2, diễn viên Lý Nhã Kỳ cùng hàng loạt sao Việt khoe sắc trên thảm đỏ sự kiện ra mắt cuộc thi Trao Quyền Dành Cho Phụ Nữ – MsMA 2023 tại TP.HCM. Người đẹp, doanh nhân Lý Nhã Kỳ thể hiện sự sang trọng và quyền lực khi bước xuống từ xe sang xe Rolls Royce 40 tỷ.',
   },
   {
-    thumbnailUrl: 'news_3.png',
-    date: '29/07/2023',
-    title: 'Amet minim mollit non deserunt ullam est sit aliqua',
+    thumbnailUrl: 'news_1.png',
+    date: '09/02/2023',
+    title: 'Nhan sắc Lý Nhã Kỳ thăng hạng, xuất hiện tươi tắn sau tin đồn chán showbiz',
+    url: 'https://www.saigonchoice.com/nhan-sac-ly-nha-ky-thang-hang-xuat-hien-tuoi-tan-sau-tin-don-chan-showbiz/',
     description:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim veli',
+      'Chiều 9/2, diễn viên Lý Nhã Kỳ cùng hàng loạt sao Việt khoe sắc trên thảm đỏ sự kiện ra mắt cuộc thi Trao Quyền Dành Cho Phụ Nữ – MsMA 2023 tại TP.HCM. Người đẹp, doanh nhân Lý Nhã Kỳ thể hiện sự sang trọng và quyền lực khi bước xuống từ xe sang xe Rolls Royce 40 tỷ.',
   },
 ]
 

@@ -18,8 +18,14 @@ const introductions = [
   {
     imageUrl: 'thumbnail_1.png',
     title: 'THÔNG TIN MsMA',
-    description:
-      'MsMA 2023, tên viết tắt của Ms Millionaireasia. Đây không phải là một cuộc thi sắc đẹp. Lấy cảm hứng từ triết lý Phụ nữ vì Phụ nữ, MsMA 2023 hướng đến mục đích biến phụ nữ trở thành hình mẫu lý tưởng của châu Á. Đây là cuộc thi dựa trên khả năng quảng bá khẩu hiệu: Phụ nữ vì Phụ nữ, Châu Á của người Châu Á',
+    description: (
+      <Text>
+        <strong>MsMA 2023</strong>, tên viết tắt của <strong>Ms Millionaireasia</strong>. Đây không
+        phải là một cuộc thi sắc đẹp. Lấy cảm hứng từ triết lý Phụ nữ vì Phụ nữ, MsMA 2023 hướng đến
+        mục đích biến phụ nữ trở thành hình mẫu lý tưởng của châu Á. Đây là cuộc thi dựa trên khả
+        năng quảng bá khẩu hiệu: Phụ nữ vì Phụ nữ, Châu Á của người Châu Á
+      </Text>
+    ),
   },
   {
     imageUrl: 'thumbnail_1.png',
@@ -70,10 +76,28 @@ function App() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          arrows: true
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        },
+      },
+    ],
     prevArrow: <LeftArrow />,
     nextArrow: <RightArrow />,
+    dots: true,
   }
 
   return (
@@ -95,7 +119,7 @@ function App() {
         }}
         maxW="100%"
         overflow="hidden"
-        px={{ base: 0, sm: 32, xl: 60 }}
+        px={{ base: 0, sm: 32, xl: 64 }}
         py={[4, 8, 12, 20]}
       >
         <Slider {...settings}>
@@ -134,7 +158,7 @@ function App() {
         maxW={['100%']}
         overflow="hidden"
         px={{ base: 4, sm: 32, xl: 60 }}
-        w={[ '100%']}
+        w={['100%']}
         mx="auto"
       >
         <Slider {...settings}>
@@ -159,18 +183,28 @@ function App() {
           <Text
             mb="12"
             textAlign="center"
-            fontSize={{ base: '40px', md: '80px' }}
+            fontSize={{ base: '30px', xl: '80px' }}
             color="white"
             fontWeight={700}
           >
             TRỞ THÀNH THÍ SINH NGAY
           </Text>
-          <Flex gap="54px" justifyContent="space-between">
+          <Flex
+            flexDir={{ base: 'column-reverse', xl: 'row' }}
+            gap={{ base: '24px', xl: '54px' }}
+            justifyContent="space-between"
+            px={{ base: 4, md: 4 }}
+          >
             <Box flex={1}>
               <RegisterForm />
             </Box>
             <Box textAlign="center">
-              <Image w="380px" h="380px" src="./images/qr_register.png" />
+              <Image
+                mx="auto"
+                w={{ base: '240px', sm: '380px' }}
+                h={{ base: '240px', md: '380px' }}
+                src="./images/qr_register.png"
+              />
               <Text mt={8} color="white" fontWeight={700} fontSize={{ base: '20px', md: '32px' }}>
                 QUÉT MÃ QR ĐỂ <br /> ĐĂNG KÝ
               </Text>
@@ -180,7 +214,7 @@ function App() {
       </Center>
       {/* BENEFITS */}
       <Center flexDirection="column" py={32} maxW="100%">
-        <Box w="100%" mb={24} textAlign="center" position="relative">
+        <Box w="100%" mb={{ base: 12, xl: 24 }} textAlign="center" position="relative">
           {/* <Box w="80%" h="5px" position="absolute" top="50%" left="50%" bg="#223368" transform="translate(-50%, 50%)" /> */}
           <Box
             sx={{
@@ -191,7 +225,7 @@ function App() {
             <Heading
               sx={{
                 fontWeight: 900,
-                fontSize: '80px',
+                fontSize: { base: '30px', xl: '80px' },
                 color: '#223368',
               }}
             >
@@ -199,7 +233,7 @@ function App() {
             </Heading>
           </Box>
         </Box>
-        <VStack w="80%" spacing={24}>
+        <VStack w="80%" spacing={[6, 12, 24]}>
           {benefits.map((benefit) => (
             <BenefitsContainer key={benefit.title} {...benefit} />
           ))}
@@ -208,7 +242,7 @@ function App() {
           <Text
             sx={{
               fontWeight: 900,
-              fontSize: '42px',
+              fontSize: { base: '20px', xl: '42px' },
               color: '#223368',
             }}
           >
@@ -217,29 +251,29 @@ function App() {
         </Box>
       </Center>
       {/* NEWS */}
-      <Center id="news" bg="#F3F3F3" flexDirection="column" py={32} maxW="100%">
+      <Center id="news" bg="#F3F3F3" flexDirection="column" py={[16, 32]} maxW="100%">
         <Box w="100%" mb={6} textAlign="center" position="relative">
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: '80px',
+              fontSize: { base: '30px', xl: '80px' },
               color: '#223368',
             }}
           >
             TIN TỨC
           </Heading>
         </Box>
-        <Box w="80%">
+        <Box w={['95%', '80%']}>
           <NewsList />
         </Box>
       </Center>
       {/* MENTORS */}
-      <Center flexDirection="column" py={32} maxW="100%">
+      <Center flexDirection="column" py={[16, 32]} maxW="100%">
         <Box w="100%" mb={6} textAlign="center" position="relative">
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: '80px',
+              fontSize: { base: '30px', xl: '80px' },
               color: '#223368',
             }}
           >
@@ -251,12 +285,12 @@ function App() {
         </Box>
       </Center>
       {/* PARTNERS */}
-      <Center id="partner" flexDirection="column" px={24} py={32} maxW="100%">
+      <Center id="partner" flexDirection="column" px={[8, 24]} py={[8, 32]} maxW="100%">
         <Box w="100%" mb={6} textAlign="center" position="relative">
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: '80px',
+              fontSize: { base: '30px', xl: '80px' },
               color: '#223368',
             }}
           >
