@@ -36,7 +36,7 @@ const RegisterForm = () => {
           <Select
             sx={{
               height: { base: '40px', xl: '72px' },
-              fontSize: { base: 'auto', xl: '36px' },
+              fontSize: { base: 'auto', xl: '24px' },
             }}
             bg="white"
             placeholder="Chọn khu vực"
@@ -57,13 +57,13 @@ const RegisterForm = () => {
           border: '4px solid #FFFFFF',
           borderRadius: '20px',
           fontWeight: 700,
-          fontSize: ['20px','36px'],
+          fontSize: { base: '24px', xl: '30px' },
           color: '#FFFFFF',
-          height: ['45px','90px'],
-          width: ['230px','330px'],
+          height: ['45px', '70px'],
+          width: ['230px', '230px'],
           filter: 'drop-shadow(0px 0px 20px rgba(180, 232, 255, 0.5))',
           mx: 'auto',
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         mt={12}
       >

@@ -35,12 +35,12 @@ const news = [
       'Chiều 9/2, diễn viên Lý Nhã Kỳ cùng hàng loạt sao Việt khoe sắc trên thảm đỏ sự kiện ra mắt cuộc thi Trao Quyền Dành Cho Phụ Nữ – MsMA 2023 tại TP.HCM. Người đẹp, doanh nhân Lý Nhã Kỳ thể hiện sự sang trọng và quyền lực khi bước xuống từ xe sang xe Rolls Royce 40 tỷ.',
   },
   {
-    thumbnailUrl: 'news_1.png',
+    thumbnailUrl: 'news_2.jpeg',
     date: '09/02/2023',
-    title: 'Nhan sắc Lý Nhã Kỳ thăng hạng, xuất hiện tươi tắn sau tin đồn chán showbiz',
-    url: 'https://vtv.vn/van-hoa-giai-tri/ly-nha-ky-xuat-hien-tuoi-tan-sau-tin-don-chan-showbiz-20230211142029236.htm',
+    title: 'Á hậu “hot girl trứng rán” Trần Thanh Tâm nổi bật thảm đỏ “Trao Quyền Dành Cho Phụ Nữ”',
+    url: 'http://doanhnhangiadinh.vn/a-hau-hot-girl-trung-ran-tran-thanh-tam-noi-bat-tham-do-trao-quyen-danh-cho-phu-nu',
     description:
-      'Chiều 9/2, diễn viên Lý Nhã Kỳ cùng hàng loạt sao Việt khoe sắc trên thảm đỏ sự kiện ra mắt cuộc thi Trao Quyền Dành Cho Phụ Nữ – MsMA 2023 tại TP.HCM. Người đẹp, doanh nhân Lý Nhã Kỳ thể hiện sự sang trọng và quyền lực khi bước xuống từ xe sang xe Rolls Royce 40 tỷ.',
+      'Thảm đỏ sự kiện còn có sự góp mặt của nhiều sao Việt khác như diễn viên – doanh nhân Mai Thu Huyền, Á hậu Băng Châu, diễn viên Hồng Thanh, Á hậu “hotgirl trứng rán” Trần Thanh Tâm, người mẫu Andrea (An Tây), các Hoa hậu doanh nhân, Nữ hoàng sắc đẹp…',
   },
   {
     thumbnailUrl: 'news_1.png',

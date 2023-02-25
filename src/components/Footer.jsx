@@ -45,11 +45,11 @@ const socials = [
 const Footer = () => (
   <Box p={{ base: 4, md: 24, xl: 32 }} w="100%" bg="#223368">
     <Flex spacing={[2, 4]} flexDir={{ base: 'column', md: 'row' }} justifyContent="space-between">
-      <VStack mb={4} alignItems="flex-start" spacing={6}>
+      <VStack mb={4} alignItems="flex-start" spacing={[2, 4, 6]}>
         {navs.map((nav) => (
           <Link href={nav.link} key={nav.name}>
             <Heading
-              sx={{ fontWeight: 900, fontSize: { base: '16px', md: '25px' }, color: '#fff' }}
+              sx={{ fontWeight: 900, fontSize: { base: '16px', md: '20px' }, color: '#fff' }}
             >
               {nav.name}
             </Heading>
@@ -57,15 +57,15 @@ const Footer = () => (
         ))}
       </VStack>
       <VStack spacing={6}>
-        <Heading fontSize={{ base: '24px', md: '30px' }} color="white">
+        <Heading fontSize={{ base: '16px', md: '20px' }} color="white">
           Kết nối với chúng tôi tại:
         </Heading>
         <HStack spacing={8}>
           {socials.map((soc) => (
             <Link target="_blank" key={soc.url} href={soc.href}>
               <Image
-                w={{ base: '32px', md: '78px' }}
-                h={{ base: '32px', md: '78px' }}
+                w={{ base: '24px', md: '52px' }}
+                h={{ base: '24px', md: '52px' }}
                 src={`./images/socials/${soc.url}`}
                 alt="social"
               />
@@ -76,7 +76,7 @@ const Footer = () => (
           Copyright © MsMA 2023 và Oras Holding
         </Text>
       </VStack>
-      <Box mx={["auto", 0]} w="240px" h="240px">
+      <Box mx={['auto', 0]} w={{ base: '120px', xl: '240px' }} h={{ base: '120px', xl: '240px' }}>
         <Image src="./images/footer_logo.png" alt="Logo" />
       </Box>
     </Flex>

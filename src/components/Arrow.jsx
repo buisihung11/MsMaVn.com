@@ -4,12 +4,12 @@ import { ReactComponent as RightArrowSvg } from '../assets/icons/right_arrow.svg
 
 const LeftArrow = ({ onClick }) => (
   <Center
-    w={{ base: '82px' }}
-    h={{ base: '82px' }}
+    w={{ base: '64px' }}
+    h={{ base: '64px' }}
     transformOrigin="center"
     onClick={onClick}
     sx={{
-      borderRadius: '82px',
+      borderRadius: '64px',
       cursor: 'pointer',
       background: '#FFFFFF',
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',
@@ -29,11 +29,11 @@ const LeftArrow = ({ onClick }) => (
 const RightArrow = ({ onClick }) => (
   <Center
     onClick={onClick}
-    w={{ base: '82px' }}
-    h={{ base: '82px' }}
+    w={{ base: '64px' }}
+    h={{ base: '64px' }}
     transformOrigin="center"
     sx={{
-      borderRadius: '82px',
+      borderRadius: '64px',
       cursor: 'pointer',
       background: '#FFFFFF',
       boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 1px 1px #46309F',

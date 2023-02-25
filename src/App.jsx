@@ -30,9 +30,29 @@ const introductions = [
   },
   {
     imageUrl: 'thumbnail_1.png',
-    title: 'THÔNG TIN MsMA',
-    description:
-      'MsMA 2023, tên viết tắt của Ms Millionaireasia. Đây không phải là một cuộc thi sắc đẹp. Lấy cảm hứng từ triết lý Phụ nữ vì Phụ nữ, MsMA 2023 hướng đến mục đích biến phụ nữ trở thành hình mẫu lý tưởng của châu Á. Đây là cuộc thi dựa trên khả năng quảng bá khẩu hiệu: Phụ nữ vì Phụ nữ, Châu Á của người Châu Á',
+    title: 'THƯ NGÕ & KHỞI NGUỒN CUỘC THI',
+    description: (
+      <Text>
+        MsMA 2023 là cuộc thi ra đời với mục đích: Tạo nên một sân chơi bổ ích nhằm tìm kiếm, tôn
+        vinh vẻ đẹp tài năng, kiến thức của người phụ nữ, nhằm hướng đến mục đích biến phụ nữ trở
+        thành hình mẫu lý tưởng của Châu Á.
+        <br />
+        <br />
+        Bắt nguồn từ một thông điệp rất nhân văn để các quốc gia châu Á. Đồng thời cũng là một dịp
+        tưởng nhớ người mẹ quá cố của ông Peter Tan
+      </Text>
+    ),
+  },
+  {
+    imageUrl: 'thumbnail_1.png',
+    title: 'ORAS HOLDING',
+    description: (
+      <Text>
+        <strong>ORAS HOLDINGS</strong> là nhà đồng hành cùng các công ty trong và ngoài nước để phát
+        triển kinh doanh, chuyển đổi số và truyền thông quảng cáo đa phương tiện. Phương châm của
+        Oras Holdings là "Sự thành công của bạn là niềm tự hào của chúng tôi".
+      </Text>
+    ),
   },
 ]
 
@@ -40,12 +60,51 @@ const benefits = [
   {
     title: 'Quyền lợi vô hình',
     benefits: [
-      { url: 'benefit_1.png' },
-      { url: 'benefit_2.png' },
-      { url: 'benefit_3.png' },
-      { url: 'benefit_4.png' },
-      { url: 'benefit_5.png' },
-      { url: 'benefit_6.png' },
+      {
+        url: 'benefit_1.png',
+        description:
+          'Các thí sinh sẽ được cấp tư cách thành viên FoMo Bạc, từ đó họ có quyền truy cập vào nền tảng cho các hoạt động giao lưu online và offline.',
+      },
+      {
+        url: 'benefit_2.png',
+        description:
+          'Tất cả những cô gái nào có niềm tin mạnh mẽ vào một lý tưởng hoặc đang muốn lan truyền một lý tưởng mới, sẽ có thể nói lên suy nghĩ và chia sẻ cảm xúc của mình trên khắp châu Á thông qua cuộc thi này.',
+      },
+      {
+        url: 'benefit_3.png',
+        description:
+          'Thí sinh dự thi sẽ có thể trao quyền cho những người phụ nữ khác bằng cách tạo ra một phong trào hoặc cộng đồng, khai thác nền tảng và tiếp cận mạng lưới rộng khắp của Millionaireasia.',
+      },
+      {
+        url: 'Quảng bá hình ảnh.png',
+        description:
+          'Thông qua cuộc thi, danh tiếng của thí sinh sẽ được quảng bá trên khắp châu Á',
+      },
+      {
+        url: 'Tham gia các hội thảo.png',
+        description:
+          'Millionaireasia sẽ tổ chức những buổi hội thảo online và offline cho các thí sinh khắp châu Á tham dự. Họ sẽ được gặp gỡ, kết nối và học hỏi từ các chuyên gia trong các lĩnh vực khác nhau từ nhiều quốc gia khác nhau.',
+      },
+      {
+        url: 'Kỹ năng cuộc sống.png',
+        description:
+          'Thí sinh dự thi có thể giới thiệu video của họ cho những nhân vật nổi trội, các nam nữ doanh nhân thành đạt thông qua nền tảng của Millionaireasia. Họ sẽ có được những kỹ năng quan trọng nhất trong cuộc sống: Nghệ thuật bán hàng',
+      },
+      {
+        url: 'Miễn phí đào tạo.png',
+        description:
+          'Thông qua cuộc thi, danh tiếng của thí sinh sẽ được quảng bá trên khắp châu Á',
+      },
+      {
+        url: 'Giao lưu và chia sẻ.png',
+        description:
+          'Millionaireasia sẽ tổ chức những buổi hội thảo online và offline cho các thí sinh khắp châu Á tham dự. Họ sẽ được gặp gỡ, kết nối và học hỏi từ các chuyên gia trong các lĩnh vực khác nhau từ nhiều quốc gia khác nhau.',
+      },
+      {
+        url: 'Quyền lợi người giới thiệu.png',
+        description:
+          'Thí sinh dự thi có thể giới thiệu video của họ cho những nhân vật nổi trội, các nam nữ doanh nhân thành đạt thông qua nền tảng của Millionaireasia. Họ sẽ có được những kỹ năng quan trọng nhất trong cuộc sống: Nghệ thuật bán hàng',
+      },
     ],
   },
   {
@@ -54,7 +113,7 @@ const benefits = [
   },
   {
     title: 'Quyền lợi thí sinh tại Việt Nam',
-    benefits: [{ url: 'benefit_7.png' }, { url: 'benefit_8.png' }, { url: 'benefit_9.png' }],
+    benefits: [{ url: 'benefit_7.png' }, { url: 'benefit_8.png' }, { url: 'Voucher_1tr.png' }],
   },
 ]
 
@@ -66,10 +125,28 @@ const rules = [
       'Ở mỗi chặng, các thí sinh buộc phải phát huy Tính cách, Ý tưởng và Giá trị. Trong trường hợp chưa quyết định được người thắng cuộc trong vòng Bán kết hoặc Chung kết, thí sinh nào có số phiếu bình chọn cao nhất trong thời gian ngắn nhất sẽ là người chiến thắng.',
   },
   {
-    imageUrl: 'rule_1.png',
-    title: 'THỂ LỆ CUỘC THI',
+    imageUrl: 'rule_2.png',
+    title: 'CÁCH THỨC VÀ THỜI GIAN ĐĂNG KÝ',
     description:
-      'Ở mỗi chặng, các thí sinh buộc phải phát huy Tính cách, Ý tưởng và Giá trị. Trong trường hợp chưa quyết định được người thắng cuộc trong vòng Bán kết hoặc Chung kết, thí sinh nào có số phiếu bình chọn cao nhất trong thời gian ngắn nhất sẽ là người chiến thắng.',
+      'Bạn sẽ cần xác minh danh tính trên nền tảng, gửi ảnh đại diện và một video Tính cách dài 1 phút để bắt đầu hành trình trao quyền cho phụ nữ.',
+  },
+  {
+    imageUrl: 'rule_3.png',
+    title: 'VÒNG TỨ KẾT',
+    description:
+      'Đây là giai đoạn quảng bá thương hiệu Tính cách của các thí sinh tới các FFF thông qua một video dài 1 phút. Thí sinh dự thi sẽ nhận được 20% hoa hồng từ việc nhận Những người bình chọn video Nhân Cách của thí sinh sẽ được tặng một token NFT Tính cách MsMA 2023 và tư cách thành viên FoMo Bạc.',
+  },
+  {
+    imageUrl: 'rule_4.png',
+    title: 'VÒNG BÁN KẾT',
+    description:
+      'Giai đoạn quảng bá Ý Tưởng của thí sinh và sự ủng hộ hoạt động TRAO QUYỀN CHO PHỤ NỮ thông qua một video dài 2 phút.',
+  },
+  {
+    imageUrl: 'rule_5.png',
+    title: 'VÒNG CHUNG KẾT',
+    description:
+      'Đây là giai đoạn để các thí sinh phổ biến Giá Trị và việc ủng hộ TRAO QUYỀN CHO PHỤ NỮ  thông qua một video dài ba phút. Điều kiện cho ngôi vị Quán quân, Á quân 1 và 2, các thí sinh (với tối thiểu 300 lượt bình chọn) phải lọt vào top 3 dựa trên số lượt bình chọn.',
   },
 ]
 
@@ -103,7 +180,7 @@ function App() {
 
   return (
     <Container minH="2000px" overflow="hidden" maxWidth="100vw" p={0}>
-      <Image h={{ base: '140px', md: 'auto' }} src="./images/hero_image.png" alt="Dan Abramov" />
+      <Image h={{ base: '140px', md: 'auto' }} src="./images/hero_image.gif" alt="Dan Abramov" />
       {/* NAV */}
       <Navigation />
       {/* INTRODUCTION */}
@@ -112,7 +189,7 @@ function App() {
         height={{ base: 'auto', xl: '800px' }}
         sx={{
           '& .slick-slide': {
-            p: '2rem',
+            px: ['2rem', '4rem'],
           },
           '& .slick-slider': {
             width: '100%',
@@ -121,7 +198,7 @@ function App() {
         maxW="100%"
         overflow="hidden"
         px={{ base: 0, sm: 32, xl: 64 }}
-        py={[4, 8, 12, 20]}
+        py={[4, 8, 12, 12]}
       >
         <Slider {...settings}>
           {introductions.map((introd) => (
@@ -153,6 +230,8 @@ function App() {
         px={{ base: 4, sm: 32, xl: 60 }}
         w={['100%']}
         mx="auto"
+        py={[4, 8]}
+        pb={{ base: 4, md: 20, xl: 24 }}
       >
         <Slider {...settings}>
           {rules.map((rule) => (
@@ -176,7 +255,7 @@ function App() {
           <Text
             mb="12"
             textAlign="center"
-            fontSize={{ base: '30px', xl: '80px' }}
+            fontSize={{ base: '24px', sm: '32px', xl: '54px' }}
             color="white"
             fontWeight={700}
           >
@@ -198,7 +277,7 @@ function App() {
                 h={{ base: '240px', md: '380px' }}
                 src="./images/qr_register.png"
               />
-              <Text mt={8} color="white" fontWeight={700} fontSize={{ base: '20px', md: '32px' }}>
+              <Text mt={8} color="white" fontWeight={700} fontSize={{ base: '20px', md: '26px' }}>
                 QUÉT MÃ QR ĐỂ <br /> ĐĂNG KÝ
               </Text>
             </Box>
@@ -208,7 +287,6 @@ function App() {
       {/* BENEFITS */}
       <Center flexDirection="column" py={32} maxW="100%">
         <Box w="100%" mb={{ base: 12, xl: 24 }} textAlign="center" position="relative">
-          {/* <Box w="80%" h="5px" position="absolute" top="50%" left="50%" bg="#223368" transform="translate(-50%, 50%)" /> */}
           <Box
             sx={{
               zIndex: 2,
@@ -218,7 +296,7 @@ function App() {
             <Heading
               sx={{
                 fontWeight: 900,
-                fontSize: { base: '30px', xl: '80px' },
+                fontSize: { base: '30px', xl: '42px' },
                 color: '#223368',
               }}
             >
@@ -226,16 +304,16 @@ function App() {
             </Heading>
           </Box>
         </Box>
-        <VStack w="80%" spacing={[6, 12, 24]}>
+        <VStack w={{ base: '90%', xl: '85%' }} spacing={[6, 12, 24]}>
           {benefits.map((benefit) => (
             <BenefitsContainer key={benefit.title} {...benefit} />
           ))}
         </VStack>
-        <Box textAlign="center" mt={24}>
+        <Box textAlign="center" px={[4, 8]} mt={24}>
           <Text
             sx={{
               fontWeight: 900,
-              fontSize: { base: '20px', xl: '42px' },
+              fontSize: { base: '20px', xl: '30px' },
               color: '#223368',
             }}
           >
@@ -249,7 +327,7 @@ function App() {
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: { base: '30px', xl: '80px' },
+              fontSize: { base: '30px', xl: '42px' },
               color: '#223368',
             }}
           >
@@ -266,24 +344,24 @@ function App() {
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: { base: '30px', xl: '80px' },
+              fontSize: { base: '30px', xl: '42px' },
               color: '#223368',
             }}
           >
             MENTORS
           </Heading>
         </Box>
-        <Box w="80%">
+        <Box w={{ base: '95%', xl: '90%' }}>
           <MentorList />
         </Box>
       </Center>
       {/* PARTNERS */}
-      <Center id="partner" flexDirection="column" px={[8, 24]} py={[8, 32]} maxW="100%">
+      <Center id="partner" flexDirection="column" px={[4, 8, 24]} py={[8, 32]} maxW="100%">
         <Box w="100%" mb={6} textAlign="center" position="relative">
           <Heading
             sx={{
               fontWeight: 900,
-              fontSize: { base: '30px', xl: '80px' },
+              fontSize: { base: '30px', xl: '42px' },
               color: '#223368',
             }}
           >

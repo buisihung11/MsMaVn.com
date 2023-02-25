@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import Slider from 'react-slick'
 import YouTube from 'react-youtube'
+import { LeftArrow, RightArrow } from './Arrow'
 import MentorCard from './MentorCard'
 
 const settings = {
@@ -15,6 +16,8 @@ const settings = {
       },
     },
   ],
+  prevArrow: <LeftArrow />,
+  nextArrow: <RightArrow />,
   dots: true,
 }
 
@@ -44,19 +47,20 @@ const opts = {
 
 const VideoContainer = () => (
   <Box
-    w="100%"
+    w="80%"
     sx={{
       '& .slick-slide': {
         p: ['1rem', '2rem'],
       },
-      '& .slick-slide > div >div >div' : {
-        height: '100%'
-      }
+      '& .slick-slide > div >div >div': {
+        height: '100%',
+      },
     }}
+    py={{ base: 4, md: 8, xl: 12 }}
   >
     <Slider {...settings}>
       {videos.map((video) => (
-        <Box h={{ base: '200px', xl: '700px' }} bg="white">
+        <Box h={{ base: '200px', md: '400px', xl: '650px' }} bg="white">
           <YouTube videoId={video.id} opts={opts} />
         </Box>
       ))}

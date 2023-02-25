@@ -11,17 +11,17 @@ const CardRule = ({ imageUrl, title, description }) => {
       // minW="500px"
     >
       <Flex gap="20px" flexDir={{ base: 'column-reverse', md: 'row' }}>
-        <Center flex={1}>
+        <Center flex={1} py={2}>
           <Box
             textAlign="center"
-            pt={{ base: 0, sm: 8, xl: 0 }}
+            pt={{ base: 0, sm: 8, md: 4, xl: 6 }}
             pb={[4, 8]}
             px={{ base: 6, sm: 12, md: 6 }}
           >
             <Text
               textAlign="center"
               sx={{
-                fontSize: { base: 20, xl: 30 },
+                fontSize: { base: 20, xl: 26 },
                 color: '#223368',
               }}
             >
@@ -29,7 +29,7 @@ const CardRule = ({ imageUrl, title, description }) => {
             </Text>
             <Text
               sx={{
-                fontSize: [14, 14, 14, 20],
+                fontSize: [14, 14, 14, 16],
                 lineHeight: { base: 'auto', xl: '36px' },
               }}
             >
