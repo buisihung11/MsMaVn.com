@@ -70,7 +70,7 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 backgroundImage: 'url(./images/benefits/placeholder.png)',
                 zIndex: 2,
                 cursor: 'pointer',
-                opacity: 0,
+                opacity: 1,
                 transition: 'all 300ms ease-in-out',
                 backgroundPosition: 'center'
               }}
