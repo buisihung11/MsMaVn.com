@@ -71,7 +71,8 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 zIndex: 2,
                 cursor: 'pointer',
                 opacity: 0,
-                transition: 'all 300ms ease-in-out'
+                transition: 'all 300ms ease-in-out',
+                backgroundPosition: 'center'
               }}
               w="100%"
               h="100%"
