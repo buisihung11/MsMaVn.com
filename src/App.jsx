@@ -76,7 +76,7 @@ const benefits = [
           'Thí sinh dự thi sẽ có thể trao quyền cho những người phụ nữ khác bằng cách tạo ra một phong trào hoặc cộng đồng, khai thác nền tảng và tiếp cận mạng lưới rộng khắp của Millionaireasia.',
       },
       {
-        url: 'Quảng bá hình ảnh.png',
+        url: 'quangbahinhanh.png',
         description:
           'Thông qua cuộc thi, danh tiếng của thí sinh sẽ được quảng bá trên khắp châu Á',
       },

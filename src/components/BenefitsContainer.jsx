@@ -8,7 +8,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 7 * 1000,
   responsive: [
     {
@@ -46,9 +46,11 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
       sx={{
         '& .slick-slide': {
           p: { base: '1rem', xl: '2rem' },
+          h: '100%'
         },
       }}
       overflow="hidden"
+      h="100%"
     >
       <Slider {...settings}>
         {benefits.map((benefit) => (
@@ -61,8 +63,11 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
             _hover={{
               '& .benefit_description' : {
                 opacity: 1,
+                display: 'flex'
               }
             }}
+            minH="200px"
+            zIndex={3}
           >
             <Center
               className="benefit_description"
@@ -70,9 +75,10 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 backgroundImage: 'url(./images/benefits/placeholder.png)',
                 zIndex: 2,
                 cursor: 'pointer',
-                opacity: 1,
+                opacity: 0,
                 transition: 'all 300ms ease-in-out',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                display: 'none'
               }}
               w="100%"
               h="100%"
@@ -85,7 +91,7 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 <Text color="white">{benefit.description}</Text>
               </Box>
             </Center>
-            <Image src={`./images/benefits/${benefit.url}`} alt="benefit" />
+            <Image w="100%" h="100%" src={`./images/benefits/${benefit.url}`} alt="benefit" />
           </Box>
         ))}
       </Slider>
