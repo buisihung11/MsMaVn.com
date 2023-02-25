@@ -75,10 +75,10 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 backgroundImage: 'url(./images/benefits/placeholder.png)',
                 zIndex: 2,
                 cursor: 'pointer',
-                opacity: 0,
+                opacity: 1,
                 transition: 'all 300ms ease-in-out',
                 backgroundPosition: 'center',
-                display: 'none'
+                // display: 'none'
               }}
               w="100%"
               h="100%"
@@ -86,6 +86,8 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
               top="0"
               left="0"
               p={2}
+              maxH="100%"
+              overflowY="scroll"
             >
               <Box>
                 <Text color="white">{benefit.description}</Text>
