@@ -60,24 +60,26 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
               filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5))',
               overflow: 'hidden',
             }}
-            // _active={{
-            //   '& .benefit_description' : {
-            //     opacity: 1,
-            //     display: 'flex'
-            //   }
-            // }}
-            // _hover={{
-            //   '& .benefit_description' : {
-            //     opacity: 1,
-            //     display: 'flex'
-            //   }
-            // }}
-            minH="200px"
+            _active={{
+              '& .benefit_description' : {
+                opacity: 1,
+                display: 'flex'
+              }
+            }}
+            _hover={{
+              '& .benefit_description' : {
+                opacity: 1,
+                display: 'flex'
+              },
+              '& .benefit_img' : {
+                display:  'none'
+              }
+            }}
+            h="220px"
             zIndex={3}
           >
             <Center
               className="benefit_description"
-              minH="200px"
               sx={{
                 backgroundImage: 'url(./images/benefits/placeholder.png)',
                 zIndex: 2,
@@ -85,22 +87,20 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 opacity: 1,
                 transition: 'all 300ms ease-in-out',
                 backgroundPosition: 'center',
-                // display: 'none'
+                display: 'none'
               }}
               w="100%"
               h="100%"
-              // position="absolute"
-              // top="0"
-              // left="0"
               p={2}
               maxH="100%"
               overflowY="scroll"
+              h="220px"
             >
               <Box>
                 <Text color="white">{benefit.description}</Text>
               </Box>
             </Center>
-            {/* <Image w="100%" h="100%" src={`./images/benefits/${benefit.url}`} alt="benefit" /> */}
+            <Image className='benefit_img' w="100%" h="100%" src={`./images/benefits/${benefit.url}`} alt="benefit" />
           </Box>
         ))}
       </Slider>
