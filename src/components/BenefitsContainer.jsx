@@ -46,7 +46,7 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
       sx={{
         '& .slick-slide': {
           p: { base: '1rem', xl: '2rem' },
-          h: '100%'
+          h: '100%',
         },
       }}
       overflow="hidden"
@@ -61,21 +61,21 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
               overflow: 'hidden',
             }}
             _active={{
-              '& .benefit_description' : {
+              '& .benefit_description': {
                 opacity: 1,
-                display: 'flex'
-              }
+                display: 'flex',
+              },
             }}
             _hover={{
-              '& .benefit_description' : {
+              '& .benefit_description': {
                 opacity: 1,
-                display: 'flex'
+                display: 'flex',
               },
-              '& .benefit_img' : {
-                display:  'none'
-              }
+              '& .benefit_img': {
+                display: 'none',
+              },
             }}
-            h="220px"
+            h={{ base: '200px', xl: '240px' }}
             zIndex={3}
           >
             <Center
@@ -87,20 +87,25 @@ const BenefitsContainer = ({ title, benefits = [] }) => (
                 opacity: 1,
                 transition: 'all 300ms ease-in-out',
                 backgroundPosition: 'center',
-                display: 'none'
+                display: 'none',
               }}
               w="100%"
               h="100%"
               p={2}
               maxH="100%"
-              overflowY="scroll"
-              h="220px"
+              overflowY="auto"
             >
               <Box>
                 <Text color="white">{benefit.description}</Text>
               </Box>
             </Center>
-            <Image className='benefit_img' w="100%" h="100%" src={`./images/benefits/${benefit.url}`} alt="benefit" />
+            <Image
+              className="benefit_img"
+              w="100%"
+              h="100%"
+              src={`./images/benefits/${benefit.url}`}
+              alt="benefit"
+            />
           </Box>
         ))}
       </Slider>
