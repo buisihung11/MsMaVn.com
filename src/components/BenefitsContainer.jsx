@@ -8,7 +8,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 7 * 1000,
   responsive: [
     {
