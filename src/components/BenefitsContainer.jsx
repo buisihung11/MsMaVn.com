@@ -13,6 +13,7 @@ const settings = {
   responsive: [
     {
       breakpoint: 1024,
+      infinite: true,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -23,6 +24,7 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
       },
     },
   ],
