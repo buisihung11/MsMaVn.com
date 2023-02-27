@@ -109,11 +109,41 @@ const benefits = [
   },
   {
     title: 'Quyền lợi hữu hình',
-    benefits: [{ url: 'benefit_4.png' }, { url: 'benefit_5.png' }, { url: 'benefit_6.png' }],
+    benefits: [
+      {
+        url: 'benefit_4.png',
+        description:
+          'Youthlocked 100, một sản phẩm chống lão hóa (trị giá 500 đô la Singapore) giúp trẻ hóa và cải thiện nét thanh xuân ( Vòng Chung kết). Neuro Activator Soundwave (trị giá 350 đô la Singapore) để kích hoạt não bộ trong quá trình học hỏi và phát triển bản thân ( Vòng Bán Kết)',
+      },
+      {
+        url: 'benefit_5.png',
+        description: 'Cơ hội bốc thăm may mắn trúng giải thưởng trị giá 100.000 đô la Singapore',
+      },
+      {
+        url: 'benefit_6.png',
+        description:
+          'Tiệc mừng hoành tráng tại Phuket với trải nghiệm chuyên cơ riêng  (Thí sinh chung kết có ít nhất 300 phiếu bình chọn.)',
+      },
+    ],
   },
   {
     title: 'Quyền lợi thí sinh tại Việt Nam',
-    benefits: [{ url: 'benefit_7.png' }, { url: 'benefit_8.png' }, { url: 'Voucher_1tr.png' }],
+    benefits: [
+      {
+        url: 'benefit_7.png',
+        description:
+          'Hỗ trợ bộ ảnh profile chuyên nghiệp,quay video truyền cảm hứng lên đến 70% giá trị',
+      },
+      {
+        url: 'benefit_8.png',
+        description:
+          'Xây dựng thương hiệu cá nhân, Cân bằng giữa công việc và cuộc sống hôn nhân, Khởi Nghiệp Thông Minh, Nâng cao thần thái và nhân hiệu, Nội lực khai mở tính nữ thiêng liêng',
+      },
+      {
+        url: 'Voucher_1tr.png',
+        description: 'Voucher chăm sóc các dịch vụ chăm sóc nail,spa,tóc tại Lys Spa',
+      },
+    ],
   },
 ]
 
@@ -413,7 +443,7 @@ function App() {
             MENTORS TỪ SINGAPORE
           </Heading>
         </Box>
-        <Box  w={{ base: '95%', xl: '90%' }}>
+        <Box w={{ base: '95%', xl: '90%' }}>
           <MentorList mentors={mentors2} />
         </Box>
       </Center>
