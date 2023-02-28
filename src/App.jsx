@@ -17,7 +17,7 @@ import Navigation from './Navigation'
 
 const introductions = [
   {
-    imageUrl: 'thumbnail_1.jpg',
+    imageUrl: 'thumbnail_2.jpg',
     title: 'THÔNG TIN MsMA',
     description: (
       <Text>
@@ -29,7 +29,7 @@ const introductions = [
     ),
   },
   {
-    imageUrl: 'thumbnail_1.jpg',
+    imageUrl: 'thumbnail_2.jpg',
     title: 'THƯ NGÕ & KHỞI NGUỒN CUỘC THI',
     description: (
       <Text>
@@ -58,7 +58,7 @@ const introductions = [
 
 const benefits = [
   {
-    title: 'Quyền lợi vô hình',
+    title: 'Lợi ích vô hình',
     benefits: [
       {
         url: 'benefit_1.png',
@@ -108,7 +108,7 @@ const benefits = [
     ],
   },
   {
-    title: 'Quyền lợi hữu hình',
+    title: 'Lợi ích hữu hình',
     benefits: [
       {
         url: 'benefit_4.png',
