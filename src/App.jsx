@@ -300,11 +300,15 @@ function App() {
           '& .slick-slider': {
             width: '100%',
           },
+          '& .slick-dots li button:before': {
+            fontSize: '12px',
+            color: '#223368',
+          },
         }}
         maxW="100%"
         overflow="hidden"
         px={{ base: 0, sm: 32, xl: 64 }}
-        py={[4, 8, 12, 12]}
+        py={[8, 8, 12, 12]}
       >
         <Slider {...settings}>
           {introductions.map((introd) => (
@@ -330,6 +334,10 @@ function App() {
           '& .slick-slider': {
             width: '100%',
           },
+          '& .slick-dots li button:before': {
+            fontSize: '12px',
+            color: '#223368',
+          },
         }}
         maxW={['100%']}
         overflow="hidden"
@@ -337,7 +345,7 @@ function App() {
         w={['100%']}
         mx="auto"
         py={[4, 8]}
-        pb={{ base: 4, md: 20, xl: 24 }}
+        pb={{ base: 8, md: 20, xl: 24 }}
       >
         <Slider {...settings}>
           {rules.map((rule) => (
@@ -410,7 +418,7 @@ function App() {
             </Heading>
           </Box>
         </Box>
-        <VStack w={{ base: '90%', xl: '85%' }} spacing={[6, 12, 24]}>
+        <VStack w={{ base: '82%', xl: '80%' }} spacing={[12, 12, 24]}>
           {benefits.map((benefit) => (
             <BenefitsContainer key={benefit.title} {...benefit} />
           ))}

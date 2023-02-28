@@ -55,6 +55,10 @@ const VideoContainer = () => (
       '& .slick-slide > div >div >div': {
         height: '100%',
       },
+      '& .slick-dots li button:before': {
+        fontSize: '12px',
+        color: '#223368',
+      },
     }}
     py={{ base: 4, md: 8, xl: 12 }}
   >

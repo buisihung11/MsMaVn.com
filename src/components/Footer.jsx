@@ -64,8 +64,8 @@ const Footer = () => (
           {socials.map((soc) => (
             <Link target="_blank" key={soc.url} href={soc.href}>
               <Image
-                w={{ base: '24px', md: '52px' }}
-                h={{ base: '24px', md: '52px' }}
+                w={{ base: '22px', md: '42px', xl: '46px' }}
+                h={{ base: '22px', md: '42px', xl: '46px' }}
                 src={`./images/socials/${soc.url}`}
                 alt="social"
               />
