@@ -17,7 +17,7 @@ import Navigation from './Navigation'
 
 const introductions = [
   {
-    imageUrl: 'thumbnail_2.jpg',
+    imageUrl: 'thumbnail_2.png',
     title: 'THÔNG TIN MsMA',
     description: (
       <Text>
@@ -29,7 +29,7 @@ const introductions = [
     ),
   },
   {
-    imageUrl: 'thumbnail_2.jpg',
+    imageUrl: 'thumbnail_2.png',
     title: 'THƯ NGÕ & KHỞI NGUỒN CUỘC THI',
     description: (
       <Text>
