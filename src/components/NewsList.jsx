@@ -14,16 +14,16 @@ const settings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-      }
+      },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 }
 const news = [
   {
@@ -59,6 +59,10 @@ const NewsList = () => {
       sx={{
         '& .slick-slide': {
           p: '2rem',
+        },
+        '& .slick-dots li button:before': {
+          fontSize: '12px',
+          color: '#223368',
         },
       }}
     >

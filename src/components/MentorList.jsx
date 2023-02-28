@@ -26,13 +26,16 @@ const settings = {
   dots: true,
 }
 
-
-const MentorList = ({mentors}) => (
+const MentorList = ({ mentors }) => (
   <Box
     w="100%"
     sx={{
       '& .slick-slide': {
         p: '1rem',
+      },
+      '& .slick-dots li button:before': {
+        fontSize: '12px',
+        color: '#223368',
       },
     }}
   >
