@@ -21,15 +21,16 @@ const CardRule = ({ imageUrl, title, description }) => {
             <Text
               textAlign="center"
               sx={{
-                fontSize: { base: 20, xl: 26 },
+                fontSize: { base: 24, xl: 30 },
                 color: '#223368',
+                fontWeight: 900
               }}
             >
               {title}
             </Text>
             <Text
               sx={{
-                fontSize: [14, 14, 14, 16],
+                fontSize: [14, 14, 16, 20],
                 lineHeight: { base: 'auto', xl: '36px' },
               }}
             >
@@ -37,7 +38,7 @@ const CardRule = ({ imageUrl, title, description }) => {
             </Text>
           </Box>
         </Center>
-        <Box w={{ base: '100%', md: '40%' }}>
+        <Box w={{ base: '100%', md: '45%' }}>
           <Image
             objectFit="cover"
             w="100%"

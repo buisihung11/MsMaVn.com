@@ -1,4 +1,4 @@
-import { FormLabel, Input, VStack, Box, Select, Button } from '@chakra-ui/react'
+import { FormLabel, Input, VStack, Box, Select, Button, Text } from '@chakra-ui/react'
 import styled from 'styled-components'
 
 const StyledLabel = styled(FormLabel)`
@@ -21,53 +21,36 @@ const FormContainer = styled(Box)`
 
 const RegisterForm = () => {
   return (
-    <Box textAlign="right">
-      <VStack spacing="20px" textAlign="left" alignItems="start">
-        <FormContainer>
-          <StyledLabel>HỌ VÀ TÊN</StyledLabel>
-          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" />
-        </FormContainer>
-        <FormContainer>
-          <StyledLabel>SỐ ĐIỆN THOẠI</StyledLabel>
-          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" />
-        </FormContainer>
-        <FormContainer>
-          <StyledLabel>KHU VỰC SINH SỐNG:</StyledLabel>
-          <Select
-            sx={{
-              height: { base: '40px', xl: '72px' },
-              fontSize: { base: 'auto', xl: '24px' },
-            }}
-            bg="white"
-            placeholder="Chọn khu vực"
-          >
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </Select>
-        </FormContainer>
-        <FormContainer>
-          <StyledLabel>EMAIL</StyledLabel>
-          <StyledInput h={{ base: '40px', xl: '72px' }} w="100%" type="email" />
-        </FormContainer>
-      </VStack>
+    <Box textAlign="center">
       <Button
+        as="a"
+        href="https://forms.gle/xhq3QAu2TsGvo1jp9"
+        target="_blank"
         sx={{
           background: 'linear-gradient(180deg, #223368 15.38%, #264299 183.72%)',
           border: '4px solid #FFFFFF',
           borderRadius: '20px',
-          fontWeight: 700,
-          fontSize: { base: '24px', xl: '30px' },
-          color: '#FFFFFF',
-          height: ['45px', '70px'],
-          width: ['230px', '230px'],
           filter: 'drop-shadow(0px 0px 20px rgba(180, 232, 255, 0.5))',
           mx: 'auto',
-          textAlign: 'center',
+          maxW: '100%',
+          px: [4, 8],
+          py: [4, 6, 8],
         }}
         mt={12}
       >
-        XÁC NHẬN
+        <Text
+          sx={{
+            fontWeight: 700,
+            fontSize: { base: '16px', sm: '20px', xl: '30px' },
+            wordBreak: 'keep-all',
+            textAlign: 'center',
+            color: '#FFFFFF',
+            display: 'block',
+            width: '100%',
+          }}
+        >
+          NHẤN VÀO ĐÂY ĐỂ ĐĂNG KÝ
+        </Text>
       </Button>
     </Box>
   )

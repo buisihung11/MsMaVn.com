@@ -341,7 +341,7 @@ function App() {
         }}
         maxW={['100%']}
         overflow="hidden"
-        px={{ base: 4, sm: 32, xl: 60 }}
+        px={{ base: 4, sm: 32, xl: 56 }}
         w={['100%']}
         mx="auto"
         py={[4, 8]}
@@ -376,14 +376,17 @@ function App() {
             TRỞ THÀNH THÍ SINH NGAY
           </Text>
           <Flex
-            flexDir={{ base: 'column-reverse', xl: 'row' }}
+            flexDir={{ base: 'column' }}
             gap={{ base: '24px', xl: '54px' }}
-            justifyContent="space-between"
+            justifyContent="center"
             px={{ base: 4, md: 4 }}
           >
             <Box flex={1}>
               <RegisterForm />
             </Box>
+            <Text textAlign="center" color="white" fontWeight={700} fontSize={{ base: '20px', md: '26px' }}>
+              HOẶC QUÉT MÃ QR ĐỂ <br /> ĐĂNG KÝ
+            </Text>
             <Box textAlign="center">
               <Image
                 mx="auto"
@@ -391,9 +394,6 @@ function App() {
                 h={{ base: '240px', md: '380px' }}
                 src="./images/qr_register.png"
               />
-              <Text mt={8} color="white" fontWeight={700} fontSize={{ base: '20px', md: '26px' }}>
-                QUÉT MÃ QR ĐỂ <br /> ĐĂNG KÝ
-              </Text>
             </Box>
           </Flex>
         </Box>
